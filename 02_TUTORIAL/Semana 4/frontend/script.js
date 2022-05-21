@@ -6,7 +6,6 @@ Declaração de variáveis
 
 var calcResDiv = "#calc";
 
-
 /* 
 =======================
 Event Listener
@@ -17,11 +16,10 @@ Event Listener
    verifiquemos se a página foi carregada para só então chamar
    a função CalcAddAndShow, pois ela só funcionará depois da 
    criação da div de resultado, com id "result" */
-$(document).ready( function() {
+   $(document).ready( function() {
     var x0 = 10, y0 = 20;
     CalcAddAndShow(x0, y0);
 });
-
 
 
 /* 
@@ -52,6 +50,7 @@ function Calc(x, y, op){
 /* Função que mostra a operação realizada */
 function ShowOp(x, y, op){
     $(calcResDiv).append(`<br />${x} ${op} ${y} = `);
+    //Alternativa: .. += "<br />" + x + " " + op + " " + y + " = "
 }
 
 
