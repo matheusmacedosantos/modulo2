@@ -1,6 +1,6 @@
-function entrar () {
-    var area = document.getElementById("area");
+function entrar() {
+    var area = $("#area")
     var texto = prompt('Digite seu nome')
 
-    area.innerHTML = ("Bem vindo ao meu currículo, ") + texto + ("!");
-    }
+    area.text("Bem vindo ao meu currículo, " + texto + "!")
+}
