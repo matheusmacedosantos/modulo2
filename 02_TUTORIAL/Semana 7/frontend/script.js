@@ -9,6 +9,7 @@ var getResDiv = "#get";
 var getDBResDiv = "#getDB";
 
 
+
 /* 
 =======================
 Funções
@@ -61,20 +62,7 @@ function ShowResult(res){
 }
 
 
-/* Função que faz um requisição GET */
-function TestGET(){
-    var url = "https://jsonplaceholder.typicode.com/todos/1";
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", url, false);
-    xhttp.send();//A execução do script pára aqui até a requisição retornar do servidor
-
-    $(getResDiv).append("<br />" + xhttp.responseText);
-    $(getResDiv).append("<br />" + xhttp.responseText.title);
-    //console.log(xhttp.responseText);
-}
-
-/* Função que faz um requisição GET no nosso banco de dados */
+/* Função que faz uma requisição GET */
 function TestGETDB(){
     var url = "http://127.0.0.1:3071/users";
     var resposta;

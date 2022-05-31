@@ -1,6 +1,6 @@
-# Etapa 7 - Integração front-end e back-end e AJAX (Asynchronous Javascript And XML)
+# Etapa 6 - CRUD: Create, Read, Update, Delete
 
-Essa etapa tem por objetivo demonstrar como integrar front e back-end e introduzir os conceitos relacionados a AJAX.
+Essa etapa tem por objetivo introduzir conceitos de criação, leitura, atualização e deleção de dados no banco de dados
 
 ## Instruções
 
