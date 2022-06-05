@@ -8,26 +8,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>Exercícios Obrigatórios</h1>
-        <h2>Atividade 1</h2>
-       
-    Insira um número 
-    <input id="n1" type="number">
+    <center>
 
-    <button onclick="somar()">Somar 1</button>
-    <button onclick="subtrair()">Subtrair 1</button>
-
-    <br><br>
-
-    O resultado é: <ul id="resultado1"></ul>
-
+        <!-- Exercicio 1 -->
+        <div>
+          <h3>Exercicio 1</h3>
     
+          <p>Valor do produto: <input type="number" name="value" id="inputValue1" onchange="checkInputValue();"
+              placeholder="R$ 100.00" /></p>
+    
+          <span id="value1"></span>
+    
+          <br />
+    
+          <button onclick="increment();">Incrementar</button>
+          <button onclick="decrement();">Decrementar</button>
+        </div>
+    
+        <hr>
+    
+        <!-- Exercicio 2 -->
+        <div>
+          <h3>Exercicio 2</h3>
+    
+          <input id="firstInput" placeholder="Primeiro valor" />
+          <input id="secondInput" placeholder="Segundo valor" />
+    
+          <button onclick="changeText();">Alterar</button>
+        </div>
+    
+        <hr>
+    
+        <!-- Exercicio 3 -->
+        <div>
+          <h3>Exercicio 3</h3>
+    
+          <form action="">
+            <input type=" tel" id="phoneNumber" placeholder="(99) 9 9999-9999"
+              pattern="\([0-9]{2}\) [0-9]{1} [0-9]{4}-[0-9]{4}$" />
+            <p id="resultado3"></p>
+          </form>
+          <button onclick="validateRegex();">Validar</button>
+        </div>
+    
+        <hr>
+    
+        <!-- Exercicio 4 -->
+        <div>
+          <h3>Exercicio 4</h3>
+    
+          <input id="input4" type="number" placeholder="Numero de pessoas" />
+    
+          <select name="diurno-noturno" id="options4">
+            <option value="diurno">diurno</option>
+            <option value="noturno">noturno</option>
+          </select>
+    
+          <p>Resultado: R$ <span id="resultado4"></span></p>
+    
+          <button onclick="calculateTickets();">Calcular</button>
+        </div>
+    
+        <hr>
+    
+        <!-- Exercicio 5 -->
+        <div>
+          <h3>Exercicio 5</h3>
+    
+          <div>
+            <label>Insira as notas separadas por virgula</label>
+            <br />
+            <input id="input5" type="text" placeholder="Notas na prova" /><input id="input6" type="text"
+              placeholder="Notas no projeto" />
+    
+            <button onclick="calculateGrade();">Inserir notas</button>
+          </div>
+    
+          <p>
+            Media individual: <span id="mediaFive"></span><br>
+            Media geral: <span id="mediaFiveGeral"></span><br>
+            Media da prova: <span id="mediaFiveProva"></span><br>
+            Media dos trabalhos: <span id="mediaFiveTrabalhos"></span><br>
+            Maior e menor nota na prova: <span id="menorMaiorNota"></span><br>
+            Maior e menor nota do trabalho: <span id="menorMaiorNotaTrabalho"></span>
+          </p>
+        </div>
+    
+
     <script src="script.js"></script>  
-
-        <h2>Atividade 2</h2>
-
-    <input type="text" id="t1">
-    <input type="text"" id="t2">
-
 </body>
 </html>
